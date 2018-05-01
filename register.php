@@ -27,7 +27,7 @@
 		$res = mysqli_query($conn,$sql);
 
 
-		if ($res)
+		if ($res) 
 		{
     		//echo "New record created successfully";
     		header("location: index.php");
@@ -74,9 +74,9 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
+        
 
-
-
+        
 
         <!-- page content -->
         <div>
@@ -86,21 +86,21 @@
                 <h3>REGISTRATION FORM</h3>
               </div>
 
-
+              
             </div>
             <div class="clearfix"></div>
 
             <div class="row">
               <div class="col-md-9 col-sm-9 col-xs-9 center-div">
                 <div class="x_panel">
-
+                  
                   <div class="x_content">
                     <br />
                     <form id="demo-form2" method="post" action="" data-parsley-validate class="form-horizontal form-label-left">
 
                     <div class="x_title">
                     <h2>Login Credentials</h2>
-
+                    
                     <div class="clearfix"></div>
                   </div>
 
@@ -108,7 +108,7 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">First Name: <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="first_name" required="required" class="form-control col-md-7 col-xs-12">
+                              <input type="text" name="first_name" required="" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
                           <div class="form-group">
@@ -150,7 +150,7 @@
 
                           <div class="x_title">
                     <h2>Contact Information</h2>
-
+                    
                     <div class="clearfix"></div>
                   </div>
 
@@ -206,7 +206,7 @@
                           <br />
                           <div class="x_title">
                     <h2>Payment Information</h2>
-
+                    
                     <div class="clearfix"></div>
                   </div>
                           <div class="form-group">
@@ -234,7 +234,7 @@
 
                           <div class="x_title">
                     <h2>Support Plan <small>(<a href="pricing-tables.php" target="_blank">View Plan Details</a>)</small></h2>
-
+                    
                     <div class="clearfix"></div>
                   </div>
 
@@ -242,7 +242,7 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Support Plan: <span class="required">*</span>
                             </label>
                              <div class="col-md-9 col-sm-9 col-xs-12">
-
+                          
                           <div class="radio">
                             <label>
                               <input type="radio" checked="" value="Basic Plan" id="optionsRadios1" name="optionsRadios"> Basic
@@ -259,14 +259,14 @@
                             </label>
                           </div>
                         </div>
-                      </div>
+                      </div>     
 
 
                       <div class="form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">User Type: <span class="required">*</span>
                             </label>
                              <div class="col-md-9 col-sm-9 col-xs-12">
-
+                          
                           <div class="radio">
                             <label>
                               <input type="radio" checked="" value="user" name="user_type"> User:
@@ -278,14 +278,14 @@
                             </label>
                           </div>
                         </div>
-                      </div>
+                      </div>     
 
 
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button type="submit" class="btn btn-primary" name="cancel">Cancel</button>
-                          <button type="submit" formaction="login1.html" name="submit" class="btn btn-success">Submit</button>
+                          <button type="submit"  name="submit" class="btn btn-success">Submit</button>
                         </div>
                       </div>
 
@@ -295,11 +295,11 @@
               </div>
             </div>
 
-
+           
         </div>
         <!-- /page content -->
 
-
+        
       </div>
     </div>
 
@@ -318,29 +318,7 @@
     <!-- jquery.inputmask -->
     <script src="vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 
-    <!-- jquery.inputmask -->
-    <script>
-      $(document).ready(function() {
-        $(":input").inputmask();
-      });
-    </script>
-    <!-- /jquery.inputmask -->
-
-    <!-- jQuery Smart Wizard -->
-    <script>
-      $(document).ready(function() {
-        $('#wizard').smartWizard();
-
-        $('#wizard_verticle').smartWizard({
-          transitionEffect: 'slide'
-        });
-
-        $('.buttonNext').addClass('btn btn-success');
-        $('.buttonPrevious').addClass('btn btn-primary');
-        $('.buttonFinish').addClass('btn btn-default');
-      });
-    </script>
-    <!-- /jQuery Smart Wizard -->
+   
   </body>
 </html>
 
